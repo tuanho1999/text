@@ -14,7 +14,7 @@ const CardAlls = () => {
     return (
         <div className='main-product'>
         <div id='total'>
-            <p><b>Total:</b> {}</p>
+            <p><b>Total:</b> {product.length} </p>
         </div>
         <div id='list-card'>
             {product.map((item, index) => (
