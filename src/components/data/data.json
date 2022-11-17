@@ -1,0 +1,46 @@
+{
+  "storage": [
+    {
+      "id": 1,
+      "name": "clothing",
+      "price": "1000",
+      "image": "https://dosi-in.com/images/detailed/42/CDL10_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "watching",
+      "price": "2000",
+      "image": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/434247/item/goods_00_434247.jpg?width=1600&impolicy=quality_75"
+    },
+    {
+      "id": "a1c6d97f-9418-40f6-958c-358df6acb618",
+      "name": "clothing",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIWFRIVFRUYEhISFRUSEhgYGBISERIRGBUZGRgUGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHBISGjEhJCExNDExMTExNDQ0PzY0NDQ0NDE0NDQ0MTQxMTQ0NDQ0NDQ0NDQxMTQ0NDQ6NDQxNDE0NP/AABEIARMAtwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAgMEBQYHAQj/xABGEAACAQIDBQYCBggDBgcAAAABAgADEQQSIQUGMUFREyJhcYGRMqEHQlJyscEUI2KCkqLR8CQz4RU0srPS8RZDU3ODo8L/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAgEQEBAQEAAgMAAwEAAAAAAAAAAQIRAxIhMUETIlEE/9oADAMBAAIRAxEAPwCYoEdZIUWEg8O1+clMM3DWYta4knGkoW9tP8ZoCC4lO3tpaGRrqkdnAKcc5J0JKpBUj3C0oRUkrgMPJVSuyqPCWdKfdkPgKdrSfoLpCUyqU4ETSPalGc7KwlZI000nUTjFUSGRIDIp3hFa6aRZ6esM66QIqnT1McUE4xWnT1iiU7GRemuTUzuHWxjhk1nAlmlQjjqekQpL3Y/xKXEbomkUhDLOxYpOSHFeoXkhhibiIYahJGnTAtI2mMKukrW9lLuGWTCvpIXea2QzTCiCnDCnFVZes7nXrDRNacsGyqPCQgqJ1lj2MwNrSCXoUrSUoCMkWPqK6TUZdeoo4mJmsnWQm8VVlU2NpWl2m325CRfM69Yojr1lB/2ww+tEW25V+rr6yNcaMWXrOsspuytoVmYZuEtbVbJfwlZKJadYiUzG7eKOViH/AIkMLxdrjrA1pRm3jbleSeytqO7C4MnTiy3vCFBE8XUypm8JUH3nszLrobSouGSCU871AcjOQJvDNHaqYhsoAi8lUQScatLYRdJAb",
+      "price": "20000"
+    },
+    {
+      "id": "9a3f8468-079b-4ec9-87c7-fa7786063192",
+      "name": "watching",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQlQe-gCopvEipodb2gMZEhOphFi3BI7atryR0aAi&s",
+      "price": "3000"
+    },
+    {
+      "id": "215ad013-5d4a-4e77-97ae-05f4b5462dba",
+      "name": "clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQlQe-gCopvEipodb2gMZEhOphFi3BI7atryR0aAi&s",
+      "price": "3000"
+    },
+    {
+      "id": "ab441a76-3c36-47e9-bd0c-c7d63fc08846",
+      "name": "clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQlQe-gCopvEipodb2gMZEhOphFi3BI7atryR0aAi&s",
+      "price": "2000"
+    },
+    {
+      "id": "d02cd064-c532-4c40-a004-ec61a52454d1",
+      "name": "clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQlQe-gCopvEipodb2gMZEhOphFi3BI7atryR0aAi&s",
+      "price": "20000"
+    }
+  ]
+}
