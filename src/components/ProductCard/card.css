@@ -1,5 +1,5 @@
 #list-card{
-    display: flex;
+    display: inline-block;
     padding: 20px;
     
 }

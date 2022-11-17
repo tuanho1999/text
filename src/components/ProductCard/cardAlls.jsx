@@ -5,16 +5,20 @@ import Card from './card'
 
 
 
-function CardAlls({}) {
-    let data = localStorage.getItem('Form') ? JSON.parse(localStorage.getItem('Form')) : [];
+const CardAlls = () => {
+    
+    const [product, setProduct] = useState([]);
+    useEffect(()=> {fetch("http://localhost:8000/storage").then((res)=> res.json())
+    .then((data) => setProduct(data))},
+    [])
     return (
         <div className='main-product'>
         <div id='total'>
-            <p><b>Total:</b> {data.length}</p>
+            <p><b>Total:</b> {}</p>
         </div>
         <div id='list-card'>
-            {data.map((item, index) => (
-                <Card todo={item} key={index} />
+            {product.map((item, index) => (
+                <Card id={item.id} name={item.name} price={item.price} image={item.image} />
             ))
             }
         </div>
