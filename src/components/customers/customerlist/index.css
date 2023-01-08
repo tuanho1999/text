@@ -1,0 +1,143 @@
+#bar-header {
+  display: flex;
+  width: 1100px;
+  background-color: white;
+  height: 40px;
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+}
+#task1 {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.container-fluid {
+  display: flex;
+}
+#productlist1 {
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 30px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+  width: 1100px;
+  border-radius: 10px;
+}
+#btnProduct {
+  border-bottom: 1px solid rgb(193, 193, 193);
+  height: 60px;
+}
+#btnAdd1 {
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(135, 219, 103);
+  border: none;
+}
+#btnAdd1:hover {
+  background-color: rgb(106, 209, 65);
+  border: none;
+  color: white;
+}
+#btnDelete1 {
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 30px;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+}
+#btnDelete1:hover {
+  background-color: rgb(207, 63, 63);
+  border: none;
+  color: white;
+}
+#list-option {
+  width: 60px;
+  height: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#display {
+  margin-left: 20px;
+  width: 335px;
+}
+#display-parents {
+  display: flex;
+  
+}
+#search {
+  margin-left: 400px;
+  margin-top: 16px;
+}
+#search-list{
+  width: 90px;
+}
+
+#custom-table {
+  margin-left: 20px;
+  margin-right: 60px;
+}
+#cus-table {
+  width: 1000px;
+}
+#edit-body {
+  background-color: white;
+  width: 350px;
+  margin-left: 400px;
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+}
+label {
+  float: left;
+  width: 150px;
+}
+#cusId {
+  width: 220px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#btnSave {
+  margin-left: 100px;
+  margin-right: 20px;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(193, 193, 193);
+  border: none;
+  text-decoration: none;
+  color: black;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+}
+#btnCancel {
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(193, 193, 193);
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+}
+#btnSave:hover {
+  background-color: rgb(135, 219, 103);
+  color: white;
+}
+#btnCancel:hover {
+  background-color: rgb(207, 63, 63);
+  color: white;
+}
+#gender1, #gender2{
+  margin-top: 10px;
+}
+#gender2{
+  margin-left: 40px;
+}
+table{
+  margin-bottom: 20px;
+}

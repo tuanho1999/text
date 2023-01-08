@@ -1,24 +1,19 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Card from './components/ProductCard/card';
-import Form from './components/ProductForm/form';
-import Head from './components/navigatebar/head';
-import CardAlls from './components/ProductCard/cardAlls';
+import Login from "./components/login";
+import { Route, Routes } from "react-router-dom";
+import Admin from "./admin";
+import Register from "./components/register";
+
 
 function App() {
   return (
-    <div className="App">
-      <div className='head-container'>
-        <Head />
-        
-      </div>
-      
+    
+    <div className="body-app" >
       <Routes>
-        <Route path="/add" element={<Form />} />
-        <Route path="/products" element={<CardAlls />} />
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/admin/*" element={<Admin/>}/>
       </Routes>
-      
     </div>
   );
 }

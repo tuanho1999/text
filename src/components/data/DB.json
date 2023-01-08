@@ -1,0 +1,77 @@
+{
+  "user": [
+    {
+      "name": "Nguyễn Thị Hiền Nhi",
+      "address": "88 Nguyễn Bỉnh Khiêm",
+      "birth": "12/07/1999",
+      "gender": "Nữ",
+      "phone": "0905617316",
+      "buy": "1",
+      "point": "1000"
+    },
+    {
+      "name": "Nguyễn Quốc Anh",
+      "address": "102 Nam Dương",
+      "birth": "27/03/1999",
+      "gender": "Nam",
+      "phone": "0905374839",
+      "buy": "5",
+      "point": "1100"
+    },
+    {
+      "id": 1,
+      "email": "test@gmail.com"
+    },
+    {
+      "id": 1673097209040,
+      "name": "nguyễn quốc anh",
+      "address": "50 Lý Đạo Thành",
+      "birth": "2023-01-02",
+      "phone": "0905831080",
+      "gender": "Nam",
+      "buy": 2,
+      "point": 4
+    },
+    {
+      "id": 1673159285018,
+      "name": "nguyễn quốc anh",
+      "address": "50 Lý Đạo Thành",
+      "birth": "2010-02-03",
+      "phone": "0905831080",
+      "gender": "Nam",
+      "buy": 33333,
+      "point": 21212
+    }
+  ],
+  "product": [
+    {
+      "productId": 12345678,
+      "name": "Lego robot car",
+      "quantities": 40,
+      "images": "https://shopdochoitreem.net/wp-content/uploads/2022/04/anh-bia-do-choi-cho-be-o-to-dieu-khien-tu-xa-cho-tre-em-bien-hinh-robot-otbh-do-choi-mo-hinh-cho-be-trai-thong-minh-giai-tri-mau-trang.jpg",
+      "status": "còn hàng",
+      "price": 500000,
+      "category": "Lego"
+    },
+    {
+      "id": 2,
+      "productId": 12345678,
+      "name": "Lego robot car",
+      "quantities": 40,
+      "images": "https://shopdochoitreem.net/wp-content/uploads/2022/04/anh-bia-do-choi-cho-be-o-to-dieu-khien-tu-xa-cho-tre-em-bien-hinh-robot-otbh-do-choi-mo-hinh-cho-be-trai-thong-minh-giai-tri-mau-trang.jpg",
+      "status": "còn hàng",
+      "price": 500000,
+      "category": "Lego"
+    }
+  ],
+  "order": [
+    {
+      "orderId": 123456,
+      "cusname": "Nguyễn Thị Hiền Nhi",
+      "prodname": "Lego robot car",
+      "quantity": 10,
+      "total": "4000000",
+      "status": "Đang giao"
+    }
+  ]
+}

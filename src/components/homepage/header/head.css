@@ -1,0 +1,45 @@
+.fa-sign-out {
+  margin-left: 10px;
+  height: 30px ;
+  width: 30px;
+  padding-left: 5px;
+  font-size: x-large;
+  cursor: pointer;
+  margin-right: 23px;
+  
+}
+.fa-sign-out:hover {
+  background-color:rgb(94, 199, 161);
+  border-radius: 5px;
+  
+}
+#logo {
+  margin-right:1000px;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  background-color: rgb(24, 114, 81);
+  height: 50px;
+}
+#kid {
+  color: wheat;
+}
+#nav-list ul {
+  display: flex;
+  list-style-type: none;
+}
+
+#online-icon {
+  margin-top: 3px;
+}
+#logo-img {
+  height: 27px;
+  width: 27px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+
+
+

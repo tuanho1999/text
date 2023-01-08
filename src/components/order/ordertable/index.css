@@ -1,0 +1,98 @@
+#header-bar2 {
+  display: flex;
+  width: 1100px;
+  background-color: white;
+  height: 40px;
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+}
+#task2 {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+#productlist {
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 30px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+  width: 1100px;
+}
+#btnProduct {
+  border-bottom: 1px solid rgb(193, 193, 193);
+  height: 60px;
+}
+#btnAdd1 {
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(135, 219, 103);
+  border: none;
+  border-radius: 10px;
+}
+#btnAdd1:hover {
+  background-color: rgb(106, 209, 65);
+  border: none;
+  color: white;
+}
+#btnDelete1 {
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(167, 183, 206);
+  border: none;
+  border-radius: 10px;
+}
+#btnDelete1:hover {
+  background-color: rgb(101, 141, 197);
+  border: none;
+  color: white;
+}
+#list-option {
+  width: 60px;
+  height: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#display {
+  margin-left: 20px;
+}
+#display-parents {
+  display: flex;
+}
+#search1 {
+  margin-left: 400px;
+  margin-top: 16px;
+  padding-top: 2px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+#product-table {
+  margin-left: 20px;
+}
+
+.fa-pencil-square {
+  background-color: rgb(135, 219, 103) !important;
+}
+.fa-pencil-square:hover {
+  background-color: rgb(101, 150, 84) !important;
+}
+#status1 {
+  
+  color: rgb(251, 255, 1);
+}
+#prod-table2 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#prod-table2 th {
+  margin-left: 20px;
+  width: 202px;
+}

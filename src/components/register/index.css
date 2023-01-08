@@ -1,0 +1,15 @@
+#signup1 {
+    margin-left: 10px;
+    width: 90px;
+    background-color: rgb(93, 215, 198);
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  #signu1:hover{
+    background-color: rgb(28, 140, 247);
+    cursor: pointer;
+  }

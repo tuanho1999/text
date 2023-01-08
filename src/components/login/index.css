@@ -1,0 +1,72 @@
+#login {
+  text-align: center;
+}
+#login-img {
+  height: 300px;
+  width: 300px;
+}
+#container2 {
+  height: fit-content;
+  margin-top: 150px;
+  display: flex;
+  margin-left: 360px;
+  border: 1px solid white;
+  background-color: white;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);;
+  width: 700px;
+  
+}
+#left {
+  padding-right: 20px;
+}
+#right {
+  padding-right: 30px;
+}
+#emails,
+#passwords {
+ 
+  width: 250px;
+  margin-bottom: 10px;
+  height: 30px;
+}
+#remember {
+  margin-left: 150px;
+  margin-bottom: 40px;
+}
+#linked {
+  margin-left: 70px;
+  background-color: rgb(93, 215, 198);
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  cursor: pointer;
+}
+#signup {
+  margin-left: 10px;
+  width: 90px;
+  background-color: rgb(93, 215, 198);
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  cursor: pointer;
+}
+#signup:hover{
+  background-color: rgb(28, 140, 247);
+  cursor: pointer;
+}
+#linked:hover {
+  background-color: rgb(28, 140, 247);
+  cursor: pointer;
+}
+.fa-user-circle,
+.fa-key {
+  font-size: xx-large;
+  margin-top: 5px;
+  margin-right: 10px;
+}

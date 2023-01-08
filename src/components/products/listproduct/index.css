@@ -1,0 +1,166 @@
+#header {
+  display: flex;
+  width: 1100px;
+  background-color: white;
+  height: 40px;
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+}
+#task3 {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.container-fluid {
+  display: flex;
+}
+#productlist {
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 30px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+  width: 1100px;
+  border-radius: 10px;
+}
+#btnProduct {
+  border-bottom: 1px solid rgb(193, 193, 193);
+  height: 60px;
+}
+#btnAdd {
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 30px;
+  width: 170px;
+  cursor: pointer;
+  background-color: rgb(135, 219, 103);
+  border: none;
+  border-radius: 10px;
+}
+#btnAdd:hover {
+  background-color: rgb(106, 209, 65);
+  border: none;
+  color: white;
+}
+#btnDelete {
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(167, 183, 206);
+  border: none;
+  border-radius: 10px;
+}
+#btnDelete:hover {
+  background-color: rgb(101, 141, 197);
+  border: none;
+  color: white;
+}
+#list-option {
+  width: 60px;
+  height: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#display {
+  margin-left: 20px;
+}
+#display-parents {
+  display: flex;
+}
+#search {
+  margin-left: 600px;
+  margin-top: 16px;
+  padding-top: 2px;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+}
+
+th {
+  width: 144.5px;
+  text-align: center;
+  background-color: rgb(95, 99, 104);
+  color: white;
+  padding-bottom: 10px;
+}
+td {
+  background-color: rgb(193, 193, 193);
+  text-align: center;
+  padding-bottom: 30px;
+}
+#product-table {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+#edit em {
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+  background-color: rgb(167, 183, 206);
+}
+#product-image {
+  width: 70px;
+  height: 70px;
+  padding: 10px 5px;
+}
+
+#edit em:hover {
+  background-color: rgb(101, 141, 197);
+}
+.fa-pencil-square {
+  background-color: rgb(135, 219, 103) !important;
+  border-radius: 5px;
+  padding: 2px;
+  color: black;
+}
+.fa-pencil-square:hover {
+  background-color: rgb(101, 150, 84) !important;
+}
+#status {
+  color: rgb(0, 170, 40);
+}
+.fa-trash {
+  border-radius: 5px;
+  color: black;
+  padding-top: 2px;
+}
+#prod-table {
+  background-color: white;
+  margin: 30px 0px 0px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+}
+#prod-table1 {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+#prod-table1 th {
+  margin-left: 20px;
+  width: 250px;
+}
+#prod-table1 {
+  background-color: white;
+  margin: 30px 0px 0px 30px;
+}
+#out-table {
+  background-color: white;
+  margin: 30px 0px 0px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+}
+#out-table2 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#out-table2 th {
+  margin-left: 20px;
+  width: 145px;
+}
+#sold-out {
+  width: 70px;
+  margin-left: 40px;
+  color: rgb(173, 0, 0);
+}

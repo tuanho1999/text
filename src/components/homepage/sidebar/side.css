@@ -1,0 +1,58 @@
+.sidebar {
+  background-color: rgb(24, 114, 81);
+  min-height: 2000px;
+  
+}
+#nav-menu ul li {
+  list-style-type: none;
+  margin-left: -30px;
+  width: 165px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  padding-top: 10px;
+  margin-right: 5px;
+  
+}
+#nav-menu ul{
+  margin-top: 0px;
+}
+
+#nav-menu ul li:hover {
+  background-color:rgb(94, 199, 161);
+  cursor: pointer;
+  border-radius: 10px;
+  color: black;
+}
+
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.fa-tachometer,
+.fa-users,
+.fa-shopping-bag,
+.fa-list-alt,
+.fa-usd,
+.fa-comments {
+  width: 40px;
+  color: white;
+  float: left;
+  padding-left: 20px;
+  font-size: x-large;
+}
+
+h1 {
+  font-size: larger;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+

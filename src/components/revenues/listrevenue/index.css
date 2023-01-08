@@ -1,0 +1,117 @@
+#header-bar {
+  display: flex;
+  width: 1080px;
+  background-color: white;
+  height: 40px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+#task4 {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+#container-parents {
+  display: flex;
+}
+#rev-total {
+  display: flex;
+  background-color: white;
+  width: 340px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+#exp-total {
+  display: flex;
+  background-color: white;
+  width: 340px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+#profit-total {
+  display: flex;
+  background-color: white;
+  width: 340px;
+  box-shadow: 2px 2px rgb(193, 193, 193);
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+#title-rev {
+  width: 40%;
+  background-color: rgb(160, 195, 255);
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#title-exp {
+  width: 40%;
+  background-color: rgb(255, 172, 172);
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#title-profit {
+  width: 35%;
+  background-color: rgb(71, 230, 124);
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#title-exp h1 {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: rgb(255, 0, 0);
+  line-height: 2px;
+}
+#title-exp h4 {
+  padding-left: 30px;
+  color: rgb(255, 0, 0);
+}
+#title-profit h1 {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: rgb(3, 66, 24);
+  line-height: 2px;
+}
+#title-profit h4 {
+  padding-left: 30px;
+  color: rgb(3, 66, 24);
+}
+#title-detail {
+  padding-left: 5px;
+}
+#title-rev h1 {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: rgb(13, 78, 190);
+}
+#word {
+  padding-left: 15px;
+  color: rgb(13, 78, 190);
+}
+#word-exp {
+  padding-left: 30px;
+  color: rgb(255, 0, 0);
+}
+#word-profit {
+  padding-left: 20px;
+  color: rgb(3, 66, 24);
+}
+#sta-total {
+  color: black;
+  padding-left: 0%;
+}
+#pie-chart {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#rem-car {
+  width: 100px;
+  height: 100px;
+}
+
