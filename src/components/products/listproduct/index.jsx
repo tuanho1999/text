@@ -1,129 +1,117 @@
 import React from "react";
-import PropTypes from "prop-types";
-import TableProduct from "./product";
 import "./index.css";
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useEffect } from "react";
 import productApis from "../../../apis/product/productApis";
+import { useEffect } from "react";
+import FormatPrice from "../addproducts/format";
+import TableProduct from "./table";
+import DataTable from "react-data-table-component";
+import Table from "react-bootstrap/Table";
 
-function Table(props) {
-  const [product, setProduct] = useState([]);
+function ProductReport(props) {
+  const [products, setProducts] = useState([]);
   const getProductData = async () => {
     try {
       const response = await productApis.getProduct();
       if (response.status == 200) {
-        setProduct(response.data);
+        setProducts(response.data);
       }
     } catch (error) {}
   };
-  getProductData();
+
+  const columnes = [
+    {
+      name: "Mã sản phẩm",
+      selector: (product) => product.productId,
+      sortable: true,
+    },
+    {
+      name: "Tên sản phẩm",
+      selector: (product) => product.name,
+      sortable: true,
+    },
+    {
+      name: "Giá tiền",
+      selector: (product) => <FormatPrice price={product.price} />,
+      sortable: true,
+    },
+    {
+      name: "Hình ảnh",
+      selector: (product) => (
+        <img width={70} height={70} src={product.images} />
+      ),
+      sortable: true,
+    },
+    {
+      name: "Danh mục",
+      selector: (product) => product.category,
+      sortable: true,
+    },
+  ];
+
+  useEffect(() => {
+    getProductData();
+  }, []);
+
+  const current = new Date();
+  const date = `${current.getDate()}/${
+    current.getMonth() + 1
+  }/${current.getFullYear()}`;
+  const time = current.toLocaleTimeString("vi-VN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+  });
+
   return (
     <div className="container-fluid">
       <div id="header">
         <div id="task3">
           <b>Danh sách sản phẩm</b>
         </div>
-        <div></div>
+        <div>
+          <p id="demoss">
+            {time} {date}
+          </p>
+        </div>
       </div>
       <div id="productlist">
-        <div id="btnProduct">
-          <Link to="/admin/addprod">
-            <button id="btnAdd">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm sản phẩm
-              mới
-            </button>
-          </Link>
-          <button id="btnDelete">
-            <em class="fa fa-trash"></em> Xoá tất cả
-          </button>
-        </div>
-        <div id="display-parents">
-          <p id="display">
-            Hiện
-            <select id="list-option">
-              <option>10</option>
-              <option>20</option>
-              <option>30</option>
-              <option>40</option>
-              <option>50</option>
-              <option>60</option>
-              <option>70</option>
-              <option>80</option>
-              <option>90</option>
-              <option>100</option>
-            </select>
-            danh mục
-          </p>
-
-          <form id="search">
-            <label id="search-list" for="search">
-              <b>Tìm Kiếm: </b>
-            </label>
-            <input type="search" />
-          </form>
-        </div>
         <div id="product-table">
-          <table>
-            {product &&
-              product.map((item, index) => (
-                <TableProduct
-                  productId={item.productId}
-                  name={item.name}
-                  quantities={item.quantities}
-                  status={item.status}
-                  price={item.price}
-                  images={item.images}
-                  category={item.category}
-                />
-              ))}
-          </table>
+          <TableProduct />
         </div>
       </div>
-      <div id="prod-table">
-        <h1>SẢN PHẨM BÁN CHẠY</h1>
+      {/* <div id="prod-table">
+        <h1 id="title-report">SẢN PHẨM BÁN CHẠY</h1>
         <p id="line2"></p>
         <div id="prod-table1">
-          <table>
-            <tr>
-              <th>Mã đơn hàng</th>
-              <th>Tên sản phẩm</th>
-              <th>Giá tiền</th>
-              <th>Danh mục </th>
-            </tr>
-            <tr>
-              <td>24564365</td>
-              <td>Lego robot car</td>
-              <td>900,000 đ</td>
-              <td>Lego</td>
-            </tr>
-
-            <tr>
-              <td>53463743</td>
-              <td>Feeding frogs</td>
-              <td>400,000 đ</td>
-              <td>Đồ chơi trẻ em </td>
-            </tr>
-          </table>
+          <DataTable
+            columns={columnes}
+            data={products}
+            pagination
+            paginationRowsPerPageOptions={[5, 10, 20, 30, 40, 50]}  
+            fixedHeaderScrollHeight="500px"
+            selectableRowsHighlight
+            highlightOnHover
+          ></DataTable>
         </div>
-      </div>
+      </div> */}
       <div id="out-table">
-        <h1>SẢN PHẨM ĐÃ HẾT</h1>
+        <h1 id="title-report">SẢN PHẨM ĐÃ HẾT</h1>
         <p id="line2"></p>
         <div id="out-table2">
-          <table>
+          <Table striped bordered hover>
             <tr>
-              <th>Mã đơn hàng</th>
-              <th>Tên sản phẩm</th>
-              <th>Ảnh</th>
-              <th>Số lượng </th>
-              <th>Tình trạng </th>
-              <th>Giá tiền </th>
-              <th>Danh mục </th>
+              <th id="head-table">Mã đơn hàng</th>
+              <th id="head-table">Tên sản phẩm</th>
+              <th id="head-table">Ảnh</th>
+              <th id="head-table">Số lượng </th>
+              <th id="head-table">Tình trạng </th>
+              <th id="head-table">Giá tiền </th>
+              <th id="head-table">Danh mục </th>
             </tr>
             <tr>
               <td>264728</td>
-              <td>Lego robot car</td>
+              <td>Lego robot car (red)</td>
               <td>
                 <img
                   id="rem-car"
@@ -134,14 +122,14 @@ function Table(props) {
               <td>
                 <p id="sold-out">Hết hàng</p>
               </td>
-              <td>340.000 đ</td>
+              <td>500.000 đ</td>
               <td>Đồ chơi trẻ em</td>
             </tr>
-          </table>
+          </Table>
         </div>
       </div>
     </div>
   );
 }
 
-export default Table;
+export default ProductReport;

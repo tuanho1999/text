@@ -1,39 +1,41 @@
-import { all } from "axios";
 import { axiosClient } from "../axiosClients";
 
-const userApis = {
-    getUser: () => {
+const waitingApis = {
+    getWaiting: () => {
         try {
-            const res = axiosClient.get("/user");
+            const res = axiosClient.get("/waiting");
             return res;
         }catch(e) {
             console.log(e);
         }
     },
-     postUser: (req) => {
+     postWaiting: (req) => {
+
         try {
-            const res = axiosClient.post("/user", req);
+            const res = axiosClient.post("/waiting",req);
             return res;
         }catch(e) {
             console.log(e);
         }
      },
-     deleteUser: (id) => {
+     deleteWaiting: (id) => {
+
         try {
-            const res = axiosClient.delete(`/user/${id}`);
+            const res = axiosClient.delete(`/waiting/${id}`);
             return res;
         }catch(e) {
             console.log(e);
         }
      },
-     deleteAllUser: () => {
+
+     deleteAllWaiting: () => {
+
         try {
-            const res = axiosClient.delete("/user");
+            const res = axiosClient.delete("/waiting");
             return res;
         }catch(e) {
             console.log(e);
         }
-     },
-     
+     }
 }
-export default userApis;
+export default waitingApis;

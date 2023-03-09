@@ -1,43 +1,49 @@
 #header-bar {
   display: flex;
-  width: 1100px;
+  width: 1300px;
   background-color: white;
   height: 40px;
   margin-left: 30px;
   border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);
+}
+.container-fluid{
+  border:none;
 }
 #task5 {
   padding-left: 10px;
   margin-top: 10px;
 }
-#comment-parents {
-  background-color: white;
-  margin-top: 5px;
-  margin-left: 30px;
-  height: 700px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
-  width: 1100px;
-  border-radius: 10px;
+#comment-img{
+  display: flex;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
-#first-row {
+#image-comment{
   display: flex;
 }
+
 #ava-img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 #first-comment {
   display: flex;
-  width: 450px;
-  margin: 30px;
+  width: 800px;
+  margin: 40px;
+  margin-left: 240px;
   cursor: pointer;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);
   border-radius: 10px;
 }
 #note {
-  padding-left: 10px;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 #note h5 {
   height: 0px;
@@ -45,6 +51,7 @@
 .fa-star {
   font-size: smaller;
   color: rgb(253, 191, 76);
+  margin-top: 25px;
 }
 #rate {
   color: rgb(148, 174, 211);
@@ -55,4 +62,13 @@
   border: none;
   border-radius: 10px;
   margin-bottom: 5px;
+}
+#btnComment{
+  display: flex;
+  margin-left: 500px;
+  margin-bottom: 10px;
+}
+
+#comment-user{
+  font-size: medium;
 }

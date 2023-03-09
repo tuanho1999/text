@@ -16,7 +16,7 @@
 #rev-total {
   display: flex;
   background-color: white;
-  width: 340px;
+  width: 400px;
   box-shadow: 2px 2px rgb(193, 193, 193);
   margin-left: 30px;
   margin-top: 30px;
@@ -25,7 +25,7 @@
 #exp-total {
   display: flex;
   background-color: white;
-  width: 340px;
+  width: 400px;
   box-shadow: 2px 2px rgb(193, 193, 193);
   margin-left: 30px;
   margin-top: 30px;
@@ -34,7 +34,7 @@
 #profit-total {
   display: flex;
   background-color: white;
-  width: 340px;
+  width: 400px;
   box-shadow: 2px 2px rgb(193, 193, 193);
   margin-left: 30px;
   margin-top: 30px;
@@ -62,22 +62,24 @@
   margin-bottom: 10px;
 }
 #title-exp h1 {
-  padding-left: 10px;
+ 
   padding-top: 10px;
   color: rgb(255, 0, 0);
   line-height: 2px;
+  font-size:larger;
 }
-#title-exp h4 {
+#title-exp h5 {
   padding-left: 30px;
   color: rgb(255, 0, 0);
 }
 #title-profit h1 {
-  padding-left: 10px;
+  
   padding-top: 10px;
   color: rgb(3, 66, 24);
   line-height: 2px;
+  font-size:larger;
 }
-#title-profit h4 {
+#title-profit h5 {
   padding-left: 30px;
   color: rgb(3, 66, 24);
 }
@@ -85,25 +87,38 @@
   padding-left: 5px;
 }
 #title-rev h1 {
-  padding-left: 10px;
+  
   padding-top: 10px;
   color: rgb(13, 78, 190);
+  font-size:larger;
 }
 #word {
   padding-left: 15px;
   color: rgb(13, 78, 190);
+  font-size: x-large;
+  margin-top: 20px;
+
 }
 #word-exp {
-  padding-left: 30px;
+  padding-left: 15px;
   color: rgb(255, 0, 0);
+  font-size: x-large;
+  margin-top: 20px;
+
 }
 #word-profit {
-  padding-left: 20px;
+  padding-left: 10px;
   color: rgb(3, 66, 24);
+  font-size: x-large;
+  margin-top: 20px;
+
+
 }
 #sta-total {
   color: black;
   padding-left: 0%;
+  font-size: larger;
+  margin-top: 20px;
 }
 #pie-chart {
   margin-left: 30px;
@@ -114,4 +129,5 @@
   width: 100px;
   height: 100px;
 }
+
 

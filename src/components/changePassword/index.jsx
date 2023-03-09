@@ -1,35 +1,19 @@
 import React from "react";
-import "./index.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import accountApis from "../../apis/account/account";
-import { useState } from "react";
-import { useEffect } from "react";
-import { toast } from "react-toastify";
+import "./index.css"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function Register(props) {
-  const [compare,setCompare] = useState([])
-
-  const getAccountData = async () => {
-    try {
-      const response = await accountApis.getAccount();
-      if (response.status == 200) {
-        setCompare(response.data);
-      }
-    } catch (error) {}
-  };
-
-  useEffect(() => {
-    getAccountData();
-  }, []);
-
+function ChangePassword(props) {
   let navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: "",
       password: "",
-      confirmPassword: "",
+      newPassword:"",
+      confirmNewPassword: "",
     },
     validationSchema: Yup.object({
       email: Yup.string()
@@ -37,42 +21,28 @@ function Register(props) {
         .required("Vui lòng điền email!"),
       password: Yup.string()
         .min(8, "Yêu cầu 8 kí tự trở lên!")
-        .required("Vui lòng điền password!"),
-      confirmPassword: Yup.string()
-        .oneOf([Yup.ref("password")], "Mật khẩu không khớp!")
+        .required("Vui lòng điền mật khẩu!"),
+        newPassword: Yup.string()
+        .oneOf([Yup.ref("password"),"Mật khẩu mới không được trùng mật khẩu cũ!"])
+        .min(8, "Yêu cầu 8 kí tự trở lên!")
+        .required("Vui lòng điền mật khẩu mới!"),
+        confirmNewPassword: Yup.string()
+        .oneOf([Yup.ref("newPassword")], "Mật khẩu không khớp!")
         .required("Vui lòng xác nhận mật khẩu!"),
     }),
     onSubmit: (values) => {
-      let path2 = "/login";
-      navigate(path2);
       console.log(values);
-      const postDataAccount = async () => {
-        try {
-          const response = await accountApis.postAccount(values);
-          
-          return response.data;
-         
-        }catch(error) {}
-      };
-      postDataAccount();
-
-      const findUser = compare.find((value)=>{return value.email === values.email})
-
-      if(findUser.email === values.email){
-        toast.error("Tài khoản đã tồn tại!")
-      }else{
-        
-      }
-     
+      toast.success("Đổi mật khẩu thành công!")
     },
   });
   const handleSwitch = () => {
-    let paths = "/login";
+    let paths = "/admin/dash";
     navigate(paths);
   };
 
   return (
-    <div id="container2">
+    <div id="container3">
+      <ToastContainer/>
       <div id="left">
         <img
           id="login-img"
@@ -80,14 +50,14 @@ function Register(props) {
         />
       </div>
       <div id="right">
-        <h1 id="login">ĐĂNG KÝ HỆ THỐNG</h1>
+        <h1 id="login">ĐỔI MẬT KHẨU</h1>
 
         <form onSubmit={formik.handleSubmit}>
           <div class="form-group">
             <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
             <input
               id="emails"
-              placeholder="Enter E-mail..."
+              placeholder="Nhập E-mail..."
               name="email"
               type="email"
               value={formik.values.email}
@@ -101,7 +71,7 @@ function Register(props) {
             <i class="fa fa-key" aria-hidden="true"></i>{" "}
             <input
               id="passwords"
-              placeholder="Enter Password..."
+              placeholder="Nhập mật khẩu cũ..."
               name="password"
               type="password"
               value={formik.values.password}
@@ -111,21 +81,35 @@ function Register(props) {
           {formik.errors.password && formik.touched.password && (
             <p id="error">*{formik.errors.password}</p>
           )}
+           <div class="form-group">
+            <i class="fa fa-key" aria-hidden="true"></i>{" "}
+            <input
+              id="passwords"
+              placeholder="Nhập mật khẩu mới..."
+              name="newPassword"
+              type="password"
+              value={formik.values.newPassword}
+              onChange={formik.handleChange}
+            />
+          </div>
+          {formik.errors.newPassword && formik.touched.newPassword && (
+            <p id="error">*{formik.errors.newPassword}</p>
+          )}
           <div class="form-group">
             <i class="fa fa-key" aria-hidden="true"></i>{" "}
             <input
               id="passwords"
-              placeholder="Confirm Password..."
-              name="confirmPassword"
+              placeholder="Xác nhận mật khẩu mới..."
+              name="confirmNewPassword"
               type="password"
-              value={formik.values.confirmPassword}
+              value={formik.values.confirmNewPassword}
               onChange={formik.handleChange}
             />
           </div>
-          {formik.errors.confirmPassword && formik.touched.confirmPassword && (
-            <p id="error">*{formik.errors.confirmPassword}</p>
+          {formik.errors.confirmNewPassword && formik.touched.confirmNewPassword && (
+            <p id="error">*{formik.errors.confirmNewPassword}</p>
           )}
-          <input type="submit" id="linked" value="Đăng Kí" />
+          <input type="submit" id="linked" value="Đổi mật khẩu" />
           <input
             onClick={handleSwitch}
             type="button"
@@ -138,4 +122,4 @@ function Register(props) {
   );
 }
 
-export default Register;
+export default ChangePassword;
