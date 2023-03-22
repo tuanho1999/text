@@ -80,7 +80,10 @@ function Comment(props) {
             handleDelete={() => deleteCommentData(item.id)}
           />
         ))}
+<<<<<<< HEAD
         
+=======
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe
       </div>
     </div>
   );

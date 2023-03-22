@@ -8,7 +8,7 @@ function CommentCard({ comment, handleAccept, handleDelete }) {
     current.getMonth() + 1
   }/${current.getFullYear()}`;
   return (
-    <div className="container-fluid">
+    <div className="container-fluids">
       <div id="first-row">
         <div id="first-comment">
           <div id="ava">

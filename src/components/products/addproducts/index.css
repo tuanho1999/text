@@ -1,5 +1,6 @@
 
 #add-prod{
+<<<<<<< HEAD
   background-color: white;
   width: 450px;
   margin-left: 400px;
@@ -57,3 +58,63 @@ label {
   margin-bottom: 10px;
   
 }
+=======
+    background-color: white;
+    width: 450px;
+    margin-left: 400px;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);
+  }
+  label {
+    float: left;
+    width: 150px;
+  }
+  #cusId {
+    width: 220px;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  #btnSave {
+    margin-left: 100px;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(193, 193, 193);
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+  }
+  #btnCancel {
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(193, 193, 193);
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+  }
+  #btnSave:hover {
+    background-color: rgb(135, 219, 103);
+    color: white;
+  }
+  #btnCancel:hover {
+    background-color: rgb(207, 63, 63);
+    color: white;
+  }
+  #selectbox{
+    height: 30px;
+    width: 220px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe

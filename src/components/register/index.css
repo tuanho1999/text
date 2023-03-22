@@ -1,4 +1,5 @@
 #signup1 {
+<<<<<<< HEAD
   margin-left: 10px;
   width: 90px;
   background-color: rgb(93, 215, 198);
@@ -13,3 +14,19 @@
   background-color: rgb(28, 140, 247);
   cursor: pointer;
 }
+=======
+    margin-left: 10px;
+    width: 90px;
+    background-color: rgb(93, 215, 198);
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  #signup1:hover{
+    background-color: rgb(28, 140, 247);
+    cursor: pointer;
+  }
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe

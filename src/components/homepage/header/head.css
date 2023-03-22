@@ -51,6 +51,8 @@
 }
 #admin-name{
   margin-right: 5px;
+<<<<<<< HEAD
+=======
 }
 
 .dropdown {
@@ -122,5 +124,80 @@
   color: red;
   font-size:xx-small;
   
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  right: 10px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  right: 10px;
+
+ 
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropdown-contents a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-contents a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-contents {display: block;}
+
+<<<<<<< HEAD
+
+#noti-number{
+  position: absolute;
+  font-size: 12px;
+  left: 1410px;
+  top: 1px;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.fa-circle{
+  color: red;
+  font-size:xx-small;
+  
+}
+
+=======
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe

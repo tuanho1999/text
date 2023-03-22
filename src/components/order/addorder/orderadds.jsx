@@ -172,4 +172,8 @@ function AddOrder(props) {
   );
 }
 
+<<<<<<< HEAD
 export default AddOrder;
+=======
+export default AddOrder;
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe

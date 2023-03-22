@@ -73,6 +73,7 @@
   margin-top: 5px;
   margin-right: 10px;
 }
+<<<<<<< HEAD
 
 .fa-phone,
 .fa-home {
@@ -84,3 +85,8 @@
 #error{
   margin-left: 100px;
 }
+=======
+#error{
+  margin-left: 100px;
+}
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe

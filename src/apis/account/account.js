@@ -16,6 +16,7 @@ const accountApis = {
         }catch(e) {
             console.log(e);
         }
+<<<<<<< HEAD
      },
      getAccountById: (id) => {
         try {
@@ -24,6 +25,8 @@ const accountApis = {
         }catch(e) {
             console.log(e);
         }
+=======
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe
      }
     
      

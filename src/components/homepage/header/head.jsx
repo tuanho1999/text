@@ -62,7 +62,11 @@ function Head(props) {
             <div class="dropdown">
               <img
                 id="logo-img"
+<<<<<<< HEAD
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3pIAkLnMYhGN8d5LNTjLpm9R1vehK1vSHDg&usqp=CAU"
+=======
+                src="C:\Users\hohuu\OneDrive\Desktop\105898585_2748361218783040_2142583222949156089_n.jpg"
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe
               />
               <div class="dropdown-contents">
                 <Link to="/admin/information">

@@ -132,4 +132,8 @@ function ProductReport(props) {
   );
 }
 
+<<<<<<< HEAD
 export default ProductReport;
+=======
+export default ProductReport;
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe

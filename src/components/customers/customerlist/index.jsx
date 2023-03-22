@@ -34,4 +34,8 @@ function ListCustom(customer) {
     </div>
   );
 }
+<<<<<<< HEAD
 export default ListCustom;
+=======
+export default ListCustom;
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe

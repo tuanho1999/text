@@ -27,15 +27,19 @@ function Register(props) {
   let navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
+<<<<<<< HEAD
       fullname:"",
       birth: "",
       phone: "",
       address: "",
+=======
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe
       email: "",
       password: "",
       confirmPassword: "",
     },
     validationSchema: Yup.object({
+<<<<<<< HEAD
       fullname: Yup.string()
       .required("Vui lòng điền tên!"),
       birth: Yup.string()
@@ -46,6 +50,8 @@ function Register(props) {
       .required("Vui lòng điền số điện thoại!"),
       address: Yup.string()
       .required("Vui lòng điền địa chỉ!"),
+=======
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe
       email: Yup.string()
         .email("Email không đúng!")
         .required("Vui lòng điền email!"),
@@ -113,6 +119,7 @@ function Register(props) {
           )}
           <div class="form-group">
             <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
+<<<<<<< HEAD
             <input
               id="emails"
               placeholder="Enter birthday..."
@@ -155,6 +162,8 @@ function Register(props) {
           )}
           <div class="form-group">
           <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
+=======
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe
             <input
               id="emails"
               placeholder="Enter E-mail..."

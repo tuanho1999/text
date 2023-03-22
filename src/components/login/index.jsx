@@ -51,6 +51,7 @@ function Login(props) {
       } else {
         toast.error("Sai mật khẩu!");
       }
+<<<<<<< HEAD
       const myObj = {
         name: findUser.fullname,
         birth: findUser.birth,
@@ -59,6 +60,8 @@ function Login(props) {
         address: findUser.address,
       }
       localStorage.setItem("Infor", JSON.stringify(myObj) )
+=======
+>>>>>>> 99f3d04eb607c8d901442d3bddaec127550888fe
     },
   });
   const handleSwitch = () => {
