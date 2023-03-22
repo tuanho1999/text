@@ -1,11 +1,12 @@
 #header {
   display: flex;
-  width: 1100px;
+  width: 1300px;
   background-color: white;
   height: 40px;
   margin-left: 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);
+  margin-bottom: 10px;
 }
 #task3 {
   padding-left: 10px;
@@ -18,8 +19,8 @@
   background-color: white;
   margin-top: 5px;
   margin-left: 30px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
-  width: 1100px;
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193) !important;
+  width: 1300px;
   border-radius: 10px;
 }
 #btnProduct {
@@ -30,7 +31,7 @@
   margin-left: 20px;
   margin-top: 15px;
   height: 30px;
-  width: 170px;
+  width: 200px;
   cursor: pointer;
   background-color: rgb(135, 219, 103);
   border: none;
@@ -92,6 +93,8 @@ td {
 #product-table {
   margin-left: 20px;
   margin-right: 50px;
+  
+
 }
 #edit em {
   cursor: pointer;
@@ -101,8 +104,8 @@ td {
   background-color: rgb(167, 183, 206);
 }
 #product-image {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   padding: 10px 5px;
 }
 
@@ -130,11 +133,14 @@ td {
   background-color: white;
   margin: 30px 0px 0px 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);
+  
 }
 #prod-table1 {
   margin-left: 20px;
   padding-bottom: 20px;
+  border-radius: 10px;
+
 }
 
 #prod-table1 th {
@@ -149,11 +155,14 @@ td {
   background-color: white;
   margin: 30px 0px 0px 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);
+
 }
 #out-table2 {
   margin-left: 20px;
   margin-bottom: 20px;
+  margin-right: 20px;
+  
 }
 #out-table2 th {
   margin-left: 20px;
@@ -163,4 +172,9 @@ td {
   width: 70px;
   margin-left: 40px;
   color: rgb(173, 0, 0);
+}
+
+#title-report{
+  font-size: medium;
+  margin-top: 10px;
 }

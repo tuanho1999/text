@@ -12,40 +12,39 @@ function Side(props) {
           <Link to="/admin/dash">
             <li>
               <em className="fa fa-tachometer"></em>
-              DASHBOARD
+              BẢNG ĐIỀU KHIỂN
             </li>
           </Link>
           <Link to="/admin/listcustom">
             <li>
               <em className="fa fa-users"></em>
-              CUSTOMERS
+              KHÁCH HÀNG
             </li>
           </Link>
           <Link to="/admin/table">
             <li>
               <em className="fa fa-shopping-bag"></em>
-              PRODUCTS
+              SẢN PHẨM
             </li>
           </Link>
           <Link to="/admin/order">
             <li>
               <em className="fa fa-list-alt"></em>
-              ORDERS
+              ĐƠN HÀNG
             </li>
           </Link>
           <Link to="/admin/comment">
             <li>
               <em className="fa fa-comments"></em>
-              COMMENTS
+              PHẢN HỒI
             </li>
           </Link>
           <Link to="/admin/rev">
             <li>
               <em className="fa fa-usd"></em>
-              REVENUES
+              DOANH THU
             </li>
           </Link>
-          
         </ul>
       </nav>
     </div>

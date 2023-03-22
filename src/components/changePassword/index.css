@@ -1,0 +1,13 @@
+
+#container3 {
+  height: fit-content;
+  margin-top: 200px;
+  display: flex;
+  margin-left: 360px;
+  border: 1px solid white;
+  background-color: white;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);;
+  width: 700px;
+}

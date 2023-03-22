@@ -1,11 +1,12 @@
 #header-bar2 {
   display: flex;
-  width: 1100px;
+  width: 1300px;
   background-color: white;
   height: 40px;
   margin-left: 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);
+  margin-bottom: 10px;
 }
 #task2 {
   padding-left: 10px;
@@ -19,11 +20,12 @@
   background-color: white;
   margin-top: 5px;
   margin-left: 30px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);
+  border-radius: 10px;
   width: 1100px;
 }
-#btnProduct {
-  border-bottom: 1px solid rgb(193, 193, 193);
+#btnProducts {
+  
   height: 60px;
 }
 #btnAdd1 {
@@ -78,6 +80,12 @@
   margin-left: 20px;
 }
 
+#product-table1 {
+  
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193) !important;
+
+}
+
 .fa-pencil-square {
   background-color: rgb(135, 219, 103) !important;
 }
@@ -95,4 +103,11 @@
 #prod-table2 th {
   margin-left: 20px;
   width: 202px;
+}
+#prod-table3 {
+  margin-left: 30px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193) !important;
+  margin-top: 20px;
 }

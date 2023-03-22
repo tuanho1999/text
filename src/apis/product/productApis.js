@@ -17,6 +17,22 @@ const productApis = {
         }catch(e) {
             console.log(e);
         }
+     },
+     deleteProduct: (id) => {
+        try {
+            const res = axiosClient.delete(`/product/${id}`);
+            return res;
+        }catch(e) {
+            console.log(e);
+        }
+     },
+     deleteAllProduct: () => {
+        try {
+            const res = axiosClient.delete("/product");
+            return res;
+        }catch(e) {
+            console.log(e);
+        }
      }
 }
 export default productApis;

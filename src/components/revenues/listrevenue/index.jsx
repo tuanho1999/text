@@ -29,18 +29,29 @@ function Rev(props) {
       },
     ],
   };
+
+  const current = new Date();
+  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+  const time = current.toLocaleTimeString("vi-VN",{
+    hour: "2-digit",
+  minute: "2-digit",
+  hour12: true
+  });
+
   return (
     <div className="container-fluid">
       <div id="header-bar">
         <div id="task4">
           <b>Bảng thống kê doanh thu</b>
         </div>
-        <div></div>
+        <div>
+          <p id="demoss">{time} {date}</p>
+        </div>
       </div>
       <div id="container-parents">
         <div id="rev-total">
           <div id="title-rev">
-            <h1>315,286,266</h1>
+            <h1 >315,286,266</h1>
             <h3 id="word">Doanh Thu</h3>
           </div>
           <div id="title-detail">
@@ -49,11 +60,10 @@ function Rev(props) {
             <p>Đơn hàng huỷ: 7,374,773 đ (2.3%) </p>
           </div>
         </div>
-
         <div id="exp-total">
           <div id="title-exp">
-            <h1>228,587,206 </h1>
-            <h4>(72,5%)</h4>
+            <h1 >228,587,206 </h1>
+            <h5>(72,5%)</h5>
             <h3 id="word-exp">Chi Phí</h3>
           </div>
           <div id="title-detail">
@@ -61,11 +71,10 @@ function Rev(props) {
             <p>Chi phí Ads: 4,000,000 đ (1,75%)</p>
           </div>
         </div>
-
         <div id="profit-total">
           <div id="title-profit">
-            <h1>86,699,060 </h1>
-            <h4>(27,4%)</h4>
+            <h1 >86,699,060 </h1>
+            <h5>(27,4%)</h5>
             <h3 id="word-profit">Lợi nhuận</h3>
           </div>
           <div id="title-detail">
@@ -76,10 +85,7 @@ function Rev(props) {
       </div>
       <div id="pie-chart">
         <CanvasJSChart options={option1} />
-      </div>
-      
-      
-      
+      </div> 
     </div>
   );
 }

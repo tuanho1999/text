@@ -1,29 +1,37 @@
-.fa-sign-out {
+
+#admin-name{
+  margin-top: 5px;
+}
+
+.signoutBtn{
+  margin-right: 14px;
   margin-left: 10px;
-  height: 30px ;
-  width: 30px;
-  padding-left: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color:  rgb(24, 114, 81);
+  margin-top: 5px;
+}
+.signoutBtn:hover{
+  background-color:red;
+  color: white;
+}
+.fa-bell{
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
   font-size: x-large;
-  cursor: pointer;
-  margin-right: 23px;
-  
 }
-.fa-sign-out:hover {
-  background-color:rgb(94, 199, 161);
-  border-radius: 5px;
-  
-}
-#logo {
-  margin-right:1000px;
-  cursor: pointer;
-}
+
 .navbar {
   display: flex;
   background-color: rgb(24, 114, 81);
-  height: 50px;
+  height: 60px;
+  margin-bottom: 5px;
+  width: 100% !important;
+  
 }
 #kid {
-  color: wheat;
+  color: pink;
 }
 #nav-list ul {
   display: flex;
@@ -34,12 +42,85 @@
   margin-top: 3px;
 }
 #logo-img {
-  height: 27px;
-  width: 27px;
-  border-radius: 15px;
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
   margin-right: 10px;
+  cursor: pointer;
+  
+}
+#admin-name{
+  margin-right: 5px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  right: 10px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  right: 10px;
+
+ 
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropdown-contents a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-contents a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-contents {display: block;}
 
 
+#noti-number{
+  position: absolute;
+  font-size: 12px;
+  left: 1410px;
+  top: 1px;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.fa-circle{
+  color: red;
+  font-size:xx-small;
+  
+}
 

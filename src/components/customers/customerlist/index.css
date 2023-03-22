@@ -1,11 +1,29 @@
-#bar-header {
+#bar-header2 {
   display: flex;
-  width: 1100px;
+  width: 1300px;
   background-color: white;
   height: 40px;
   margin-left: 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);
+
+}
+#btnSave1,
+#btnCancel1 {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+#btnSave1 {
+  margin-right: 2px;
+}
+#btnSave1:hover {
+  background-color: rgb(135, 219, 103);
+  color: white;
+}
+#btnCancel1:hover {
+  background-color: red;
+  color: white;
 }
 #task1 {
   padding-left: 10px;
@@ -16,10 +34,10 @@
 }
 #productlist1 {
   background-color: white;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 30px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
-  width: 1100px;
+  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);
+  width: 1300px;
   border-radius: 10px;
 }
 #btnProduct {
@@ -54,7 +72,7 @@
 }
 #list-option {
   width: 60px;
-  height: 20px;
+  height: 30px;
   margin-left: 3px;
   margin-right: 3px;
 }
@@ -64,19 +82,21 @@
 }
 #display-parents {
   display: flex;
-  
 }
 #search {
   margin-left: 400px;
   margin-top: 16px;
 }
-#search-list{
+#search-list {
   width: 90px;
 }
 
 #custom-table {
-  margin-left: 20px;
-  margin-right: 60px;
+  margin-right: 25px;
+  
+}
+#table-customer {
+  width: 700px;
 }
 #cus-table {
   width: 1000px;
@@ -132,12 +152,57 @@ label {
   background-color: rgb(207, 63, 63);
   color: white;
 }
-#gender1, #gender2{
+#gender1,
+#gender2 {
   margin-top: 10px;
 }
-#gender2{
+#gender2 {
   margin-left: 40px;
 }
-table{
+table {
   margin-bottom: 20px;
+}
+#search-box {
+  border-radius: 5px;
+}
+#head-table {
+  text-align: center;
+  color: black;
+}
+#btncheck {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+}
+#genderbox{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#modal{
+  margin-left: 80px;
+}
+.fa-trash{
+  color: white;
+
+}
+
+
+.customer-header{
+  display: flex;
+}
+
+.addCustomer{
+    margin-top: 10px;
+}
+.btn-success{
+  margin-right: 10px;
+}
+#demoss{
+  margin-left: 950px;
+  margin-top: 10px;
+  font-size: medium;
 }

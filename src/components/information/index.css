@@ -1,0 +1,25 @@
+#infor-body{
+    background-color: white;
+     width: 650px;
+     margin-left: 400px;
+     margin-top: 200px;
+     padding-left: 20px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);
+   }
+   #infor-title{
+       display: flex;
+      
+   }
+   #admin-ava{
+       border-radius: 100px;
+       width: 150px;
+       height: 150px;
+   }
+   
+   #admin-infor{
+       margin-left: 50px;
+       
+   }

@@ -1,6 +1,6 @@
-#header-bar {
+#header-bar1 {
   display: flex;
-  width: 1080px;
+  width: 1280px;
   background-color: white;
   height: 40px;
   margin-left: 30px;
@@ -23,9 +23,10 @@
 #pro-total {
   display: flex;
   background-color: white;
-  width: 450px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  width: 550px;
+  box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);
   border-radius: 10px;
+
   
 }
 
@@ -33,12 +34,14 @@
   margin-left: 70px;
   border-radius: 10px;
   height: 160px;
+ 
+
 }
 #ord-total {
   display: flex;
   background-color: white;
-  width: 450px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  width: 550px;
+  box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);
   margin-right: 70px;
   margin-top: 30px;
   border-radius: 10px;
@@ -46,8 +49,8 @@
 #sold-total {
   display: flex;
   background-color: white;
-  width: 450px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  width: 550px;
+  box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);
   margin-top: 30px;
   border-radius: 10px;
 }
@@ -58,6 +61,7 @@
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  margin-right: 40px
 }
 #icon-pro {
   height: 130px;
@@ -66,14 +70,18 @@
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  margin-right: 40px
+
 }
 #icon-ord {
   height: 130px;
-  width: 100px;
+  width: 110px;
   background-color: rgb(255, 225, 136);
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  margin-right: 40px
+
 }
 #icon-sold {
   height: 130px;
@@ -82,6 +90,8 @@
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  margin-right: 40px
+
 }
 #descrip {
   padding-left: 30px;
@@ -108,8 +118,10 @@
 }
 
 #guest-total {
-  padding-left: 40px;
+  padding-left: 60px;
   color: rgb(41, 194, 82);
+  font-size:larger;
+  margin-top: 20px;
   
 }
 #guest-link, #pro-link, #order-link, #sold-link{
@@ -117,39 +129,50 @@
   color: black;
 }
 #product-total {
-  padding-left: 40px;
+  padding-left: 60px;
   color: purple;
+  font-size:larger;
+  margin-top: 20px;
+
 }
 #order-total {
-  padding-left: 40px;
+  padding-left: 60px;
   color: rgb(219, 170, 20);
+  font-size:larger;
+  margin-top: 20px;
+
 }
 #soldout-total {
-  padding-left: 40px;
+  padding-left: 60px;
   color: rgb(69, 116, 197);
+  font-size:larger;
+  margin-top: 20px;
+
 }
 #line1 {
   border-bottom: 1px solid rgb(255, 212, 59);
-  margin-left: 30px;
-  margin-right: 20px;
+  width: 280px;
+  margin-left: 20px;
+  
 }
 #revenue-report {
   margin-top: 50px;
   background-color: white;
-  width: 450px;
+  width: 550px;
   height: 500px;
   margin-right: 70px;
   border-radius: 10px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);
+
 
 }
 #data-report {
   margin-top: 50px;
   background-color: white;
-  width: 450px;
+  width: 550px;
   height: 500px;
   border-radius: 10px;
-  box-shadow: 2px 2px rgb(193, 193, 193);
+  box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);
 
 }
 #line2 {
@@ -166,4 +189,22 @@
 }
 h3{
   padding-left: 50px;
+}
+#word-line{
+  margin-left: 80px;
+  font-size: large;
+}
+#title-head{
+  font-size: x-large;
+  margin-left:20px;
+}
+#demo{
+  margin-left: 750px;
+  margin-top: 10px ;
+  font-size:medium;
+}
+#demos{
+  margin-left: 1000px;
+  margin-top: 10px ;
+  font-size:medium;
 }

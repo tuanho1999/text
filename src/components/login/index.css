@@ -1,5 +1,7 @@
 #login {
   text-align: center;
+  font-size: x-large;
+
 }
 #login-img {
   height: 300px;
@@ -9,12 +11,12 @@
   height: fit-content;
   margin-top: 150px;
   display: flex;
-  margin-left: 360px;
+  margin-left: 460px;
   border: 1px solid white;
   background-color: white;
   padding-top: 20px;
   border-radius: 10px;
-  box-shadow: 3px 3px 3px 3px rgb(193, 193, 193);;
+  box-shadow: 5px 5px 5px 5px rgb(193, 193, 193);;
   width: 700px;
   
 }
@@ -30,6 +32,7 @@
   width: 250px;
   margin-bottom: 10px;
   height: 30px;
+  
 }
 #remember {
   margin-left: 150px;
@@ -65,8 +68,19 @@
   cursor: pointer;
 }
 .fa-user-circle,
-.fa-key {
+.fa-key{
   font-size: xx-large;
   margin-top: 5px;
   margin-right: 10px;
+}
+
+.fa-phone,
+.fa-home {
+  font-size: xx-large;
+  margin-top: 5px;
+  margin-right: 14px;
+}
+
+#error{
+  margin-left: 100px;
 }
